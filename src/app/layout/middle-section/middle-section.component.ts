@@ -6,7 +6,7 @@ import { NzLayoutModule } from 'ng-zorro-antd/layout';
 @Component({
   selector: 'app-middle-section',
   standalone: true,
-  imports: [CommonModule, RouterLink, RouterOutlet,NzLayoutModule ],
+  imports: [CommonModule, RouterLink, RouterOutlet,NzLayoutModule,  ],
   templateUrl: './middle-section.component.html',
   styleUrl: './middle-section.component.css'
 })

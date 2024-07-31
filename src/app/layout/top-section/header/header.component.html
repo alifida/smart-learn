@@ -4,27 +4,41 @@
         <div nz-col nzSpan="4" >
           <div class="left">
             <span nz-icon nzType="open-a-i"   [nzTheme]="'outline'"   ></span>
-            
           </div>
         </div>
 
-        <div nz-col nzSpan="12">
+        <div nz-col nzSpan="16">
           <div class="center center-inner">
             <app-menu/>
           </div>
 
         </div>
-        <div nz-col nzSpan="8">
+        <div nz-col nzSpan="4">
           <div class="right">
-            <div class="right v-padding-2">
-
-              <button nz-button   nzShape="circle"><span nz-icon nzType="user"></span></button>
+            <div class="right h-padding-2">
+              <button nz-button  nzType="link" nzDanger  nzShape="circle">
+                <span nz-icon nzType="poweroff" [nzTheme]="'outline'"></span>
+              </button>
+            </div>
+            <div class="right h-padding-2">
+              <button nz-button   nzShape="circle"  nzType="link"><span nz-icon nzType="user"></span></button>
             </div>
 
-            <div class="right v-padding-2">
+            <div class="right h-padding-2">
 
-              <button nz-button  nzType="primary"  nzShape="circle"><span nz-icon nzType="setting"></span></button>
+              <button  nzType="link" nzShape="circle" nz-button nz-dropdown [nzDropdownMenu]="top_setting_menu" [nzPlacement]="'bottomRight'" ><span nz-icon nzType="setting"></span></button>
+              <nz-dropdown-menu #top_setting_menu="nzDropdownMenu">
+                <ul nz-menu>
+                  <li nz-menu-item><span nz-icon nzType="highlight" nzTheme="outline"></span> 1st menu item length</li>
+                  <li nz-menu-item><span nz-icon nzType="copy" nzTheme="outline"></span> 2nd menu item length</li>
+                  <li nz-menu-item><span nz-icon nzType="scissor" nzTheme="outline"></span> 3rd menu item length</li>
+                </ul>
+              </nz-dropdown-menu> 
+               
             </div>
+
+
+
           </div>
         </div>
       </div>

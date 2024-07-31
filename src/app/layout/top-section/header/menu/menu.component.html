@@ -1,13 +1,121 @@
-<ul nz-menu nzMode="horizontal">
-    <li nz-menu-item nzSelected>
-      <span nz-icon nzType="mail"></span>
-      Navigation One
+<ul nz-menu nzMode="horizontal" class="center center-inner">
+    <li nz-submenu nzTitle="LMS" nzIcon="read"  [nzPlacement]="'bottomCenter'">
+      <ul>
+        <li nz-menu-item style="height: auto; width: 1000px;">
+          <div nz-row>
+            <div nz-col nzSpan="8" >
+              <nz-card style="margin-left: 10px;margin-top: 16px"  >
+                <nz-card-meta
+                  [nzAvatar]="avatarTemplate"
+                  nzTitle="Card title"
+                  nzDescription="This is the description"
+                ></nz-card-meta>
+              </nz-card>
+              <nz-card style="margin-left: 10px;margin-top: 16px" [nzActions]="[actionSetting, actionEdit, actionEllipsis]">
+                <nz-skeleton [nzActive]="true"  [nzAvatar]="{ size: 'large' }">
+                  <nz-card-meta
+                    [nzAvatar]="avatarTemplate"
+                    nzTitle="Card title"
+                    nzDescription="This is the description"
+                  ></nz-card-meta>
+                </nz-skeleton>
+              </nz-card>
+              <ng-template #avatarTemplate>
+                <nz-avatar nzSrc="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"></nz-avatar>
+              </ng-template>
+              <ng-template #actionSetting>
+                <span nz-icon nzType="setting"></span>
+              </ng-template>
+              <ng-template #actionEdit>
+                <span nz-icon nzType="edit"></span>
+              </ng-template>
+              <ng-template #actionEllipsis>
+                <span nz-icon nzType="ellipsis"></span>
+              </ng-template>
+            </div>
+
+              <div nz-col nzSpan="8" >
+
+
+
+
+
+            <nz-card style="margin-left: 10px;margin-top: 16px"  >
+              <nz-card-meta
+                [nzAvatar]="avatarTemplate"
+                nzTitle="Card title"
+                nzDescription="This is the description"
+              ></nz-card-meta>
+            </nz-card>
+            <nz-card style="margin-left: 10px;margin-top: 16px" [nzActions]="[actionSetting, actionEdit, actionEllipsis]">
+              <nz-skeleton [nzActive]="true"  [nzAvatar]="{ size: 'large' }">
+                <nz-card-meta
+                  [nzAvatar]="avatarTemplate"
+                  nzTitle="Card title"
+                  nzDescription="This is the description"
+                ></nz-card-meta>
+              </nz-skeleton>
+            </nz-card>
+            <ng-template #avatarTemplate>
+              <nz-avatar nzSrc="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"></nz-avatar>
+            </ng-template>
+            <ng-template #actionSetting>
+              <span nz-icon nzType="setting"></span>
+            </ng-template>
+            <ng-template #actionEdit>
+              <span nz-icon nzType="edit"></span>
+            </ng-template>
+            <ng-template #actionEllipsis>
+              <span nz-icon nzType="ellipsis"></span>
+            </ng-template>
+
+
+            </div>
+            <div nz-col nzSpan="8" >
+
+
+            <nz-card style="margin-left: 10px;margin-top: 16px"  >
+              <nz-card-meta
+                [nzAvatar]="avatarTemplate"
+                nzTitle="Card title"
+                nzDescription="This is the description"
+              ></nz-card-meta>
+            </nz-card>
+            <nz-card style="margin-left: 10px;margin-top: 16px" [nzActions]="[actionSetting, actionEdit, actionEllipsis]">
+              <nz-skeleton [nzActive]="true"  [nzAvatar]="{ size: 'large' }">
+                <nz-card-meta
+                  [nzAvatar]="avatarTemplate"
+                  nzTitle="Card title"
+                  nzDescription="This is the description"
+                ></nz-card-meta>
+              </nz-skeleton>
+            </nz-card>
+            <ng-template #avatarTemplate>
+              <nz-avatar nzSrc="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"></nz-avatar>
+            </ng-template>
+            <ng-template #actionSetting>
+              <span nz-icon nzType="setting"></span>
+            </ng-template>
+            <ng-template #actionEdit>
+              <span nz-icon nzType="edit"></span>
+            </ng-template>
+            <ng-template #actionEllipsis>
+              <span nz-icon nzType="ellipsis"></span>
+            </ng-template>
+           </div>
+           </div>
+        </li>
+         
+      </ul>
     </li>
-    <li nz-menu-item nzDisabled>
-      <span nz-icon nzType="appstore"></span>
-      Navigation Two
+
+
+
+    <li nz-menu-item >
+      <span nz-icon nzType="shop" nzTheme="outline"></span>
+      PLAIT
     </li>
-    <li nz-submenu nzTitle="Navigation Three - Submenu" nzIcon="setting">
+    <li nz-submenu nzTitle="BRAID" nzIcon="setting">
       <ul>
         <li nz-menu-group nzTitle="Item 1">
           <ul>
@@ -21,11 +129,11 @@
             <li nz-menu-item>Option 4</li>
             <li nz-submenu nzTitle="Sub Menu">
               <ul>
-                <li nz-menu-item nzDisabled>Option 5</li>
+                <li nz-menu-item >Option 5</li>
                 <li nz-menu-item>Option 6</li>
               </ul>
             </li>
-            <li nz-submenu nzDisabled nzTitle="Disabled Sub Menu">
+            <li nz-submenu  nzTitle="Disabled Sub Menu">
               <ul>
                 <li nz-menu-item>Option 5</li>
                 <li nz-menu-item>Option 6</li>
@@ -36,6 +144,6 @@
       </ul>
     </li>
     <li nz-menu-item>
-      <a href="https://ng.ant.design" target="_blank" rel="noopener noreferrer">Navigation Four - Link</a>
+      <a href="https://ng.ant.design" target="_blank" rel="noopener noreferrer"><span nz-icon nzType="read" nzTheme="outline"></span> &nbsp;&nbsp;WARP</a>
     </li>
   </ul>
